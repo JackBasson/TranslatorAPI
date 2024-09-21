@@ -1,6 +1,16 @@
+
+.background-container {
+    background-image: url("/assets/space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +19,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #eeeeee;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,18 +81,121 @@ button:hover {
     animation-timing-function: ease-in-out; 
 }
 
-.green-line1 {
-    background-color: green;
-    top: 25%;
-    animation: moveLine 6s linear infinite;
-    box-shadow: 0 0 20px green, 0 0 35px green, 0 0 50px green;
+.handle {
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    opacity: 1;
+    animation-timing-function: ease-in-out; 
 }
 
-.green-line2 {
-    background-color: green;
+.curvedhandle {
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    border: 1px solid transparent;
+    border-top-color: #000;
+    border-left-color: #000;
+    border-radius: 100% 0 0 0;
+    background: none; 
+}
+
+.black-line1 {
+    background-color: black;
+    top: 4.9%;
+    animation: moveLine 5s linear infinite;
+    margin-left: 150px;
+}
+
+.purple-line1 {
+    background-color: #c800ff;
+    top: 5%;
+    animation: moveLine 5s linear infinite;
+    box-shadow: 0 0 20px #d656fa, 0 0 35px #d656fa, 0 0 50px #d656fa;
+}
+
+.black-line2 {
+    background-color: black;
+    top: 94.9%;
+    animation: moveLine 5s linear infinite;
+    margin-left: 150px;
+}
+
+.blue-line2 {
+    background-color: #1e83ff;
+    top: 95%;
+    animation: moveLine 5s linear infinite;
+    box-shadow: 0 0 20px #1e83ff, 0 0 35px #1e83ff, 0 0 50px #1e83ff;
+}
+
+.green-line1 {
+    background-color: rgb(2, 232, 2);
+    top: 25%;
+    animation: moveLine 6s linear infinite;
+    box-shadow: 0 0 20px rgb(2, 232, 2), 0 0 35px rgb(2, 232, 2), 0 0 50px rgb(2, 232, 2);
+}
+
+.black-line3 {
+    background-color: black;
+    top: 24.9%;
+    animation: moveLine 6s linear infinite;
+}
+
+.yellow-line2 {
+    background-color: #fff202;
     top: 75%;
+    animation: moveLine 6s linear infinite;
+    box-shadow: 0 0 20px #fff202, 0 0 35px #fff202, 0 0 50px #fff202;
+}
+
+.black-line4 {
+    background-color: black;
+    top: 74.9%;
+    animation: moveLine 6s linear infinite;
+}
+
+.maulhandle {
+    position: absolute;
+    height: 4px;
+    width: 75px;
+    opacity: 1;
+    animation-timing-function: ease-in-out; 
+}
+
+.maulline {
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    opacity: 0.7;
+    animation-timing-function: ease-in-out; 
+}
+
+.red-line1 {
+    background-color: red;
+    top: 15%;
     animation: moveLine 5.5s linear infinite;
-    box-shadow: 0 0 20px green, 0 0 35px green, 0 0 50px green;
+    box-shadow: 0 0 20px red, 0 0 35px red, 0 0 50px red;
+}
+
+.black-line5 {
+    background-color: black;
+    top: 14.85%;
+    animation: moveLine 5.5s linear infinite;
+    margin-left: 112.5px
+}
+
+.red-line2 {
+    background-color: red;
+    top: 85%;
+    animation: moveLine 5.5s linear infinite;
+    box-shadow: 0 0 20px red, 0 0 35px red, 0 0 50px red;
+}
+
+.black-line6 {
+    background-color: black;
+    top: 84.9%;
+    animation: moveLine 5.5s linear infinite;
+    margin-left: -40px;
 }
 
 @keyframes moveLine {
